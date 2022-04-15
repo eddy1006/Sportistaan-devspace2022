@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.32" height="52.32" viewBox="0 0 52.32 52.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Icon_ionic-md-chatbubbles" data-name="Icon ionic-md-chatbubbles" transform="translate(-3.375 -3.375)">
+    <path id="Path_8" data-name="Path 8" class="cls-1" d="M14.04,37.41c-2.541,0-5.634-3.094-5.634-5.634V11.25H7.2a3.838,3.838,0,0,0-3.823,3.823v34.41l7.357-7.295H37.785A3.884,3.884,0,0,0,41.609,38.3V37.41Z" transform="translate(0 6.211)"/>
+    <path id="Path_9" data-name="Path 9" class="cls-1" d="M47.59,3.375H12.475A4.4,4.4,0,0,0,8.086,7.764V36.2a4.412,4.412,0,0,0,4.389,4.4H42.433l9.546,6.666V7.764A4.4,4.4,0,0,0,47.59,3.375Z" transform="translate(3.716 0)"/>
+  </g>
+</svg>

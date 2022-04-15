@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "88474592138",
+    "project_id": "sportistaan-e4bb7",
+    "storage_bucket": "sportistaan-e4bb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88474592138:android:d8ff2cb6f90800ccd31e73",
+        "android_client_info": {
+          "package_name": "com.example.sportistaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88474592138-59vuol2hcn9plg8dk3uls3dfdbierh5m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sportistaan",
+            "certificate_hash": "746d9b101e9c4f85e71e224f2356d5db8720f377"
+          }
+        },
+        {
+          "client_id": "88474592138-hoe1f566dr1acb3n4f6s3bq61365loou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCthxOJfOYR_mUG22kI4CUGiqFmsc8WS-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88474592138-hoe1f566dr1acb3n4f6s3bq61365loou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

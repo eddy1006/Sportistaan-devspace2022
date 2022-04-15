@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">Username Entry</button>
+    <form>
+        <label for="message">Message:</label><br>
+        <input type="text" id="message_val" name="message" value="Type your message..."><br>
+        <button type="button" onclick="return getmessage()">send</button>
+    </form>
+    <script>
+        var HOST = location.origin.replace(/^http/, 'ws')
+        var ws = new WebSocket(HOST);
+        // const ws = new WebSocket("ws://sportistaan.herokuapp.com/");
+        ws.addEventListener("open", () => {
+            console.log("we are connected!");
+
+            // ws.send("Hello world!");
+        });
+        var person;
+        function myFunction() {
+            let text;
+            person = prompt("Please enter your name:", "Harry Potter");
+        }
+
+        function getmessage() {
+            ws.send(JSON.stringify({
+                info: document.getElementById("message_val").value,
+                username: person,
+            })
+            )
+        }
+
+        ws.addEventListener("message", event => {
+            console.log(JSON.parse(event.data));
+            var para = document.createElement("P");
+            para.innerText = JSON.parse(event.data).username + "  :  " + JSON.parse(event.data).info
+            document.body.appendChild(para);
+        });
+
+    </script>
+</body>
+
+</html>

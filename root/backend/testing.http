@@ -1,0 +1,82 @@
+POST https://radiant-hamlet-81324.herokuapp.com/create-event HTTP/1.1
+content-type: application/json
+
+
+{
+    "gameName": "football",
+    "time": "14pm",
+    "venue": "grounds",
+    "student_info": [{"name":"person2"}],
+    "finish": false,
+    "winner": "person1"
+}
+
+###
+GET https://radiant-hamlet-81324.herokuapp.com/show-event HTTP/1.1
+###
+POST https://radiant-hamlet-81324.herokuapp.com/join-event HTTP/1.1
+content-type: application/json
+
+
+{
+    "_id":"619917612985886706b43174",
+    "name": "person3"
+}
+
+###
+
+GET http://127.0.0.1:80/show-event HTTP/1.1
+
+
+###
+GET https://radiant-hamlet-81324.herokuapp.com/my-event?username=person4 HTTP/1.1
+
+
+
+###
+
+POST https://sportistaan.herokuapp.com/create-event HTTP/1.1
+content-type: application/json
+
+
+{
+    "gameName": "football",
+    "time": "14pm",
+    "venue": "grounds",
+    "student_info": [{"name" :"person456"}, {"name":"person3"}],
+    "finish": false,
+    "winner": "person1"
+}
+
+###
+
+POST https://0.0.0.0:3000/create-event HTTP/1.1
+content-type: application/json
+
+
+{
+    "gameName": "football",
+    "time": "14pm",
+    "venue": "grounds",
+    "student_info": [{"name" :"person456"}, {"name":"person3"}],
+    "finish": false,
+    "winner": "person1"
+}
+
+###
+
+
+GET https://sportistaan.herokuapp.com/show-event HTTP/1.1
+
+
+################################
+
+POST https://sportistaan.herokuapp.com/join-event HTTP/1.1
+
+{
+    "_id":"62586472980207460f4ebd14",
+    "name": "person99"
+}
+###
+
+GET https://sportistaan.herokuapp.com/registered-event?username=name HTTP/1.1
