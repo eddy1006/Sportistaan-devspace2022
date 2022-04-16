@@ -39,8 +39,7 @@ class UpcomingCard extends StatelessWidget {
                 onPressed: () async {
                   try {
                     var response = await http.post(
-                      Uri.parse(
-                          "https://sportistaan.herokuapp.com/join-event"),
+                      Uri.parse("https://sportistaan.herokuapp.com/join-event"),
                       headers: <String, String>{
                         'Content-Type': 'application/json; charset=UTF-8',
                       },
@@ -51,6 +50,10 @@ class UpcomingCard extends StatelessWidget {
                     );
                     print(response.statusCode);
                     print(response.body);
+                    var snackBar = SnackBar(
+                      content: Text(response.body),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
                   } on Exception catch (e) {
                     print(e);
                   }
