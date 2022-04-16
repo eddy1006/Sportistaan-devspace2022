@@ -49,14 +49,21 @@ This will obviously be way cheaper and better for people as it will be divided a
 
 **Database:** Mongodb,Firebase
 
+**Authentication Service:** Auth0
+[link](https://auth0.com/blog/flutter-authentication-authorization-with-auth0-part-1-adding-authentication-to-an-app/)
 
+**UI/UX designs:** figma
+
+**Domain provider:** GoDaddy.com
 ## Issues we ran into
+We ran into authentication integration issues while using auth0
+It was somewhat tricky at times to run queries for certain requirements on the database.
+UI/UX designs were time taking.
 
 ## Authors and acknowledgment
 We would like to thank Aditya Gupta,Archit Jain,Nirad Yeola for their contribution in this wonderful project and ideas.
 
-I would also thank devjams hackathon team to provide us with a great opportunity to display our ideas and vision.
+I would also thank DevSpace hackathon team to provide us with a great opportunity to display our ideas and vision.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
 
