@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "sportistaan",
+            "request": "launch",
+            "flutterMode": "debug",
+            "type": "dart",
+            "args": [
+                "--dart-define",
+                "AUTH0_DOMAIN=dev-j0cl0bxk.us.auth0.com",
+                "--dart-define",
+                "AUTH0_CLIENT_ID=uB7ZBvL2tvWCE31LxzHUB6mUslcz8BqD"
+            ]
+        },
+        {
+            "name": "sportistaan",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sportistaan (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sportistaan (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "Flutter (lib\\main.dart)",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib\\main.dart"
+        }
+    ]
+}

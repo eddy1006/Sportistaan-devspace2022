@@ -1,8 +1,13 @@
+// domain - dev-j0cl0bxk.us.auth0.com
+// client id - uB7ZBvL2tvWCE31LxzHUB6mUslcz8BqD
+
+
 import 'package:flutter/material.dart';
 import 'package:sportistaan/login_page.dart';
 import 'dart:async';
 
 import 'package:sportistaan/main_page.dart';
+import 'package:sportistaan/screens/auth.dart';
 
 void main() {
   runApp(MyApp());
@@ -39,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Timer(
         const Duration(seconds: 5),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => MainPage())));
+            context, MaterialPageRoute(builder: (context) => LoginScreen())));
   }
 
   @override
