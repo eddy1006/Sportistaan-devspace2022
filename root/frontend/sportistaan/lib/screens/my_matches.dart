@@ -33,45 +33,44 @@ class _MyMatchesState extends State<MyMatches> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: const Color(0xFF24243E),
-        leading: Builder(
-          builder: (context) => IconButton(
-            icon: const CircleAvatar(
-              radius: 30,
-              backgroundColor: Colors.grey,
-            ),
-            onPressed: () => Scaffold.of(context).openDrawer(),
-          ),
-        ),
-        title: const Text(
-          'My Matches',
-          style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-      ),
-      body: FutureBuilder(
-          future: fetchData(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.done) {
-              return Container(
-                  decoration: kBoxDecoration,
-                  child: ListView.builder(
-                      itemCount: eventList.length,
-                      itemBuilder: (context, index) {
-                        return MatchCard(eventList[index]);
-                      }));
-            } else if (snapshot.hasError) {
-              return Center(
-                child: Text(snapshot.error.toString()),
-              );
-            } else {
-              return const Center(child: CircularProgressIndicator());
-            }
-          }),
-    );
+    return FutureBuilder(
+        future: fetchData(),
+        builder: (context, snapshot) {
+          if (snapshot.connectionState == ConnectionState.done) {
+            return Scaffold(
+                appBar: AppBar(
+                  backgroundColor: const Color(0xFF24243E),
+                  leading: Builder(
+                    builder: (context) => IconButton(
+                      icon: const CircleAvatar(
+                        radius: 30,
+                        backgroundColor: Colors.grey,
+                      ),
+                      onPressed: () => Scaffold.of(context).openDrawer(),
+                    ),
+                  ),
+                  title: const Text(
+                    'My Matches',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
+                ),
+                body: Container(
+                    decoration: kBoxDecoration,
+                    child: ListView.builder(
+                        itemCount: eventList.length,
+                        itemBuilder: (context, index) {
+                          return MatchCard(eventList[index]);
+                        })));
+          } else if (snapshot.hasError) {
+            return Center(
+              child: Text(snapshot.error.toString()),
+            );
+          } else {
+            return const Center(child: CircularProgressIndicator());
+          }
+        });
   }
 }
